@@ -15,7 +15,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow(frame:UIScreen.mainScreen().bounds)
+        
+        let vc1 = UIViewController()
+        vc1.view.backgroundColor = UIColor.whiteColor()
+        let nav1 = UINavigationController(rootViewController: vc1)
+        nav1.title = "vc1"
+        vc1.title = "vc1"
+        
+        let vc2 = UIViewController()
+        vc2.view.backgroundColor = UIColor.yellowColor()
+        let nav2 = UINavigationController(rootViewController: vc2)
+        nav2.title = "vc2"
+        vc2.title = "vc2"
+        
+        let vc3 = UIViewController()
+        vc3.view.backgroundColor = UIColor.redColor()
+        let nav3 = UINavigationController(rootViewController: vc3)
+        nav3.title = "vc3"
+        vc3.title = "vc3"
+        
+        let vc4 = UIViewController()
+        vc4.view.backgroundColor = UIColor.blueColor()
+        let nav4 = UINavigationController(rootViewController: vc4)
+        nav4.title = "vc4"
+        vc4.title = "vc4"
+        
+        let tabBarVC = GVScrollTabBarController()
+        
+        tabBarVC.viewControllers = [nav1,nav2,nav3,nav4]
+        
+        self.window?.rootViewController = tabBarVC
+        self.window?.makeKeyAndVisible()
+
         return true
     }
 

@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		86B75B2D1C9AFBDA004555CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B75B2C1C9AFBDA004555CE /* AppDelegate.swift */; };
-		86B75B2F1C9AFBDA004555CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B75B2E1C9AFBDA004555CE /* ViewController.swift */; };
-		86B75B321C9AFBDA004555CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B75B301C9AFBDA004555CE /* Main.storyboard */; };
 		86B75B341C9AFBDA004555CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B75B331C9AFBDA004555CE /* Assets.xcassets */; };
 		86B75B371C9AFBDA004555CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B75B351C9AFBDA004555CE /* LaunchScreen.storyboard */; };
+		86B75B411C9AFBE7004555CE /* GVScrollTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B75B3E1C9AFBE7004555CE /* GVScrollTabBarController.swift */; };
+		86B75B421C9AFBE7004555CE /* GVScrollTabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B75B3F1C9AFBE7004555CE /* GVScrollTabBarControllerDelegate.swift */; };
+		86B75B431C9AFBE7004555CE /* GVScrollTabBarControllerAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B75B401C9AFBE7004555CE /* GVScrollTabBarControllerAnimationTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		86B75B291C9AFBDA004555CE /* GVScrollTabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GVScrollTabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B75B2C1C9AFBDA004555CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		86B75B2E1C9AFBDA004555CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		86B75B311C9AFBDA004555CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86B75B331C9AFBDA004555CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86B75B361C9AFBDA004555CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86B75B381C9AFBDA004555CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86B75B3E1C9AFBE7004555CE /* GVScrollTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GVScrollTabBarController.swift; sourceTree = "<group>"; };
+		86B75B3F1C9AFBE7004555CE /* GVScrollTabBarControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GVScrollTabBarControllerDelegate.swift; sourceTree = "<group>"; };
+		86B75B401C9AFBE7004555CE /* GVScrollTabBarControllerAnimationTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GVScrollTabBarControllerAnimationTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				86B75B2C1C9AFBDA004555CE /* AppDelegate.swift */,
-				86B75B2E1C9AFBDA004555CE /* ViewController.swift */,
-				86B75B301C9AFBDA004555CE /* Main.storyboard */,
+				86B75B3E1C9AFBE7004555CE /* GVScrollTabBarController.swift */,
+				86B75B3F1C9AFBE7004555CE /* GVScrollTabBarControllerDelegate.swift */,
+				86B75B401C9AFBE7004555CE /* GVScrollTabBarControllerAnimationTransition.swift */,
 				86B75B331C9AFBDA004555CE /* Assets.xcassets */,
 				86B75B351C9AFBDA004555CE /* LaunchScreen.storyboard */,
 				86B75B381C9AFBDA004555CE /* Info.plist */,
@@ -124,7 +127,6 @@
 			files = (
 				86B75B371C9AFBDA004555CE /* LaunchScreen.storyboard in Resources */,
 				86B75B341C9AFBDA004555CE /* Assets.xcassets in Resources */,
-				86B75B321C9AFBDA004555CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86B75B2F1C9AFBDA004555CE /* ViewController.swift in Sources */,
+				86B75B421C9AFBE7004555CE /* GVScrollTabBarControllerDelegate.swift in Sources */,
+				86B75B431C9AFBE7004555CE /* GVScrollTabBarControllerAnimationTransition.swift in Sources */,
+				86B75B411C9AFBE7004555CE /* GVScrollTabBarController.swift in Sources */,
 				86B75B2D1C9AFBDA004555CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		86B75B301C9AFBDA004555CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				86B75B311C9AFBDA004555CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		86B75B351C9AFBDA004555CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
